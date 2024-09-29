@@ -1,0 +1,164 @@
+    .archivo-black-regular {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+
+    .quicksand {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    body{
+        color: white;
+        background-color: black;
+        background-image:URL(../pictures/pexels-njeromin-17726838.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-blend-mode:luminosity;
+        background-blend-mode: exclusion;
+    }
+
+    /* =========================== */
+    /* ==========Navigation Bar========= */
+    /* =========================== */
+    #menu{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation_bar{
+        width: 100%;
+        display: flex;
+        gap: 33.33%;
+        justify-content: center;
+        align-items: center;
+        font-family: "Quicksand", sans-serif;
+    }
+
+    .main_nav{
+        display: flex;
+        gap: 20%;
+        list-style-type: none;
+        text-decoration: none;
+    }   
+
+    .signUp{
+        display: flex;
+        gap: 10%;
+        text-decoration: none;
+        list-style-type: none; 
+    }
+    .logo img{
+        position: absolute;
+        margin: 10px;
+        width: 6%;
+        height: auto; 
+        left: 0;
+        top: 0;    
+    }
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    /* =========================== */
+    /* ==========Navigation Bar END========= */
+    /* =========================== */
+
+
+    /* =========================== */
+    /* ========== SernenityAI NAME ========= */
+    /* =========================== */
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0); /* Start at original position */
+        }
+        0% {
+            transform: translateX(-50%) ;
+        }
+    }
+
+    .projectName{
+        position: absolute;
+        top: 60%;   
+        left: 8%;
+        font-size: 73px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        animation: bounce 5s;
+        text-shadow: 1px black;
+    }
+
+
+
+    .PN_Paragraph{
+        position: absolute;
+        top: 80%;
+        left: 9%;  
+        animation: bounce 5s;
+    }
+
+    /* =========================== */
+    /* ========== SernenityAI NAME End========= */
+    /* =========================== */
+/*========IPADPRO==========*/
+@media only screen and (min-width: 835px) and (max-width: 1030px){
+}
+
+
+
+ /*==========iPAD==========*/
+@media only screen and (min-width: 700px) and (max-width: 835px){
+}
+
+
+
+
+/*========MOBILE==========*/
+@media only screen and (max-width: 600px){
+    body {
+        background-image: none;
+        background-size: 100% 100%;
+    }
+
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    } 
+    
+    .main_nav{
+        display: none;
+        position: absolute;
+        background-color: #9d9d9d;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 11;
+    }
+
+    .main_nav a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .main_nav a:hover{
+        color: #000000;
+    }
+
+    .dropdown:hover .main_nav {
+        display: block;
+    }
+
+    .signUp{
+        display: flex;
+        gap: 10%;
+        text-decoration: none;
+        list-style-type: none; 
+    }
+}
